@@ -249,7 +249,7 @@ public class JFrame_Ventana1 extends javax.swing.JFrame {
                                             .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 579, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 598, Short.MAX_VALUE)
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -292,7 +292,7 @@ public class JFrame_Ventana1 extends javax.swing.JFrame {
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel8)
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(273, Short.MAX_VALUE))
+                .addContainerGap(278, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("3.Tipo de Cliente", jPanel6);
@@ -702,8 +702,58 @@ public class JFrame_Ventana1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       
-       
+        
+        String pago = this.jComboBox1.getSelectedItem().toString();
+        System.out.println(pago);
+         int n_hijos = (int) jSpinner1.getValue();
+         System.out.println(n_hijos);
+       if (pago.equals("Tarjeta") && n_hijos == 0) {
+    System.out.print("si");
+    jLabel9.setVisible(true);
+    jLabel10.setVisible(false);
+} else if (pago.equals("Tarjeta") && n_hijos == 1) {
+    System.out.print("no");
+    jLabel9.setVisible(false);
+    jLabel10.setVisible(true);
+} else if (pago.equals("Tarjeta") && n_hijos == 2) {
+    System.out.print("si");
+    jLabel9.setVisible(true);
+    jLabel10.setVisible(false);
+} else if (pago.equals("Tarjeta") && n_hijos == 3) {
+    System.out.print("si");
+    jLabel9.setVisible(true);
+    jLabel10.setVisible(false);
+} else if (pago.equals("Tarjeta") && n_hijos == 4) {
+    System.out.print("si");
+    jLabel9.setVisible(true);
+    jLabel10.setVisible(false);
+} else if (pago.equals("Efectivo") && n_hijos == 0) {
+    System.out.print("si");
+    jLabel9.setVisible(true);
+    jLabel10.setVisible(false);
+} else if (pago.equals("Efectivo") && n_hijos == 1) {
+    System.out.print("no");
+    jLabel9.setVisible(false);
+    jLabel10.setVisible(true);
+} else if (pago.equals("Efectivo") && n_hijos == 2) {
+    System.out.print("no");
+    jLabel9.setVisible(false);
+    jLabel10.setVisible(true);
+} else if (pago.equals("Efectivo") && n_hijos == 3) {
+    System.out.print("si");
+    jLabel9.setVisible(true);
+    jLabel10.setVisible(false);
+} else if (pago.equals("Efectivo") && n_hijos == 4) {
+    System.out.print("si");
+    jLabel9.setVisible(true);
+    jLabel10.setVisible(false);
+} else if (pago.equals("Credito")) {
+    System.out.print("si");
+    jLabel9.setVisible(true);
+    jLabel10.setVisible(false);
+}
+
+
        
     }//GEN-LAST:event_jButton1ActionPerformed
 
