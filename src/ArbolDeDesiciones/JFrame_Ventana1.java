@@ -38,6 +38,9 @@ public class JFrame_Ventana1 extends javax.swing.JFrame {
         buttonGroup10 = new javax.swing.ButtonGroup();
         buttonGroup11 = new javax.swing.ButtonGroup();
         buttonGroup12 = new javax.swing.ButtonGroup();
+        buttonGroup13 = new javax.swing.ButtonGroup();
+        buttonGroup14 = new javax.swing.ButtonGroup();
+        buttonGroup15 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -83,7 +86,6 @@ public class JFrame_Ventana1 extends javax.swing.JFrame {
         jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
-        jPanel10 = new javax.swing.JPanel();
         jPanel11 = new javax.swing.JPanel();
         jPanel12 = new javax.swing.JPanel();
         jButton4 = new javax.swing.JButton();
@@ -126,6 +128,23 @@ public class JFrame_Ventana1 extends javax.swing.JFrame {
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
+        jPanel10 = new javax.swing.JPanel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jRadioButton28 = new javax.swing.JRadioButton();
+        jLabel41 = new javax.swing.JLabel();
+        jRadioButton29 = new javax.swing.JRadioButton();
+        jRadioButton30 = new javax.swing.JRadioButton();
+        jRadioButton31 = new javax.swing.JRadioButton();
+        jLabel42 = new javax.swing.JLabel();
+        jRadioButton32 = new javax.swing.JRadioButton();
+        jRadioButton33 = new javax.swing.JRadioButton();
+        jButton6 = new javax.swing.JButton();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -520,19 +539,6 @@ public class JFrame_Ventana1 extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Arbol de la MicroEmpresa 1", jPanel9);
 
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1555, Short.MAX_VALUE)
-        );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 543, Short.MAX_VALUE)
-        );
-
-        jTabbedPane1.addTab("5. MicroEmpresa 2", jPanel10);
-
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
         jPanel11Layout.setHorizontalGroup(
@@ -858,6 +864,150 @@ public class JFrame_Ventana1 extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("2.Tipo de Lente de Contacto", jPanel4);
 
+        jLabel38.setText("Decision: Mantenimiento correctivo y preventivo o recomendaciones Pasteleria");
+
+        jLabel39.setText("Seleccione los siguientes datos para los la toma de desiciones en la Pasteleria");
+
+        jLabel40.setText("Es temporada alta");
+
+        buttonGroup13.add(jRadioButton28);
+        jRadioButton28.setText("Si");
+        jRadioButton28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton28ActionPerformed(evt);
+            }
+        });
+
+        jLabel41.setText("Pedido Especial");
+
+        buttonGroup13.add(jRadioButton29);
+        jRadioButton29.setText("No");
+
+        buttonGroup14.add(jRadioButton30);
+        jRadioButton30.setText("Si");
+
+        buttonGroup14.add(jRadioButton31);
+        jRadioButton31.setText("No");
+
+        jLabel42.setText("Refrigeradores llenos");
+
+        buttonGroup15.add(jRadioButton32);
+        jRadioButton32.setText("Si");
+
+        buttonGroup15.add(jRadioButton33);
+        jRadioButton33.setText("No");
+
+        jButton6.setText("Calcular");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+
+        jLabel43.setBackground(new java.awt.Color(0, 153, 0));
+        jLabel43.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel43.setText("Realizar pasteles comunes");
+        jLabel43.setOpaque(true);
+
+        jLabel44.setBackground(new java.awt.Color(153, 255, 255));
+        jLabel44.setForeground(new java.awt.Color(255, 153, 51));
+        jLabel44.setText("Realizar pastel especial");
+        jLabel44.setOpaque(true);
+
+        jLabel45.setBackground(new java.awt.Color(255, 102, 0));
+        jLabel45.setForeground(new java.awt.Color(255, 255, 204));
+        jLabel45.setText("Realizar pastel de temporada");
+        jLabel45.setOpaque(true);
+
+        jLabel46.setBackground(new java.awt.Color(255, 0, 0));
+        jLabel46.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel46.setText("No realizar pastel");
+        jLabel46.setOpaque(true);
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel39)
+                    .addComponent(jLabel38)
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                                    .addComponent(jLabel40)
+                                    .addGap(56, 56, 56))
+                                .addGroup(jPanel10Layout.createSequentialGroup()
+                                    .addComponent(jLabel41)
+                                    .addGap(60, 60, 60)))
+                            .addGroup(jPanel10Layout.createSequentialGroup()
+                                .addComponent(jLabel42)
+                                .addGap(41, 41, 41)))
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jRadioButton28)
+                            .addComponent(jRadioButton30)
+                            .addComponent(jRadioButton32))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jRadioButton33)
+                            .addComponent(jRadioButton31)
+                            .addComponent(jRadioButton29))))
+                .addGap(415, 415, 415)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel46)
+                    .addComponent(jLabel44)
+                    .addComponent(jLabel43)
+                    .addComponent(jButton6)
+                    .addComponent(jLabel45))
+                .addContainerGap(498, Short.MAX_VALUE))
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(jLabel38)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel39))
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(jButton6)))
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel40)
+                            .addComponent(jRadioButton28)
+                            .addComponent(jRadioButton29)))
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addGap(39, 39, 39)
+                        .addComponent(jLabel43)))
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel41)
+                            .addComponent(jRadioButton30)
+                            .addComponent(jRadioButton31))
+                        .addGap(32, 32, 32)
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel42)
+                            .addComponent(jRadioButton32)
+                            .addComponent(jRadioButton33)
+                            .addComponent(jLabel45)))
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addComponent(jLabel44)))
+                .addGap(33, 33, 33)
+                .addComponent(jLabel46)
+                .addContainerGap(277, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("5. MicroEmpresa 2", jPanel10);
+
         getContentPane().add(jTabbedPane1, java.awt.BorderLayout.CENTER);
 
         pack();
@@ -994,6 +1144,35 @@ public class JFrame_Ventana1 extends javax.swing.JFrame {
      
     }//GEN-LAST:event_jButton5ActionPerformed
 
+    private void jRadioButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton28ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton28ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    boolean refrigerador_lleno = this.jRadioButton32.isSelected();
+     boolean refrigerador_Vacio = this.jRadioButton33.isSelected();
+     boolean pedido_especial = this.jRadioButton30.isSelected();
+     boolean pedido_normal= this.jRadioButton31.isSelected();
+     boolean temporada_alta = this.jRadioButton28.isSelected();
+     boolean temporada_baja = this.jRadioButton29.isSelected();
+     jLabel43.setVisible(false);
+     jLabel44.setVisible(false);
+     jLabel45.setVisible(false);
+     jLabel46.setVisible(false);
+     if (refrigerador_lleno == true && pedido_normal ==true) {
+            jLabel46.setVisible(true);
+     }else if (refrigerador_lleno == true && pedido_especial ==true) {
+            jLabel44.setVisible(true);
+        }else if (refrigerador_Vacio == true&& pedido_especial ==true) {
+            jLabel44.setVisible(true);
+        }else if (refrigerador_Vacio == true&& pedido_normal ==true&& temporada_baja ==true) {
+            jLabel43.setVisible(true);
+        }else if (refrigerador_Vacio == true&& pedido_normal ==true&& temporada_alta ==true) {
+            jLabel45.setVisible(true);
+        }
+     
+    }//GEN-LAST:event_jButton6ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1034,6 +1213,9 @@ public class JFrame_Ventana1 extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup10;
     private javax.swing.ButtonGroup buttonGroup11;
     private javax.swing.ButtonGroup buttonGroup12;
+    private javax.swing.ButtonGroup buttonGroup13;
+    private javax.swing.ButtonGroup buttonGroup14;
+    private javax.swing.ButtonGroup buttonGroup15;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
     private javax.swing.ButtonGroup buttonGroup4;
@@ -1047,6 +1229,7 @@ public class JFrame_Ventana1 extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -1079,7 +1262,16 @@ public class JFrame_Ventana1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -1119,7 +1311,13 @@ public class JFrame_Ventana1 extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton25;
     private javax.swing.JRadioButton jRadioButton26;
     private javax.swing.JRadioButton jRadioButton27;
+    private javax.swing.JRadioButton jRadioButton28;
+    private javax.swing.JRadioButton jRadioButton29;
     private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JRadioButton jRadioButton30;
+    private javax.swing.JRadioButton jRadioButton31;
+    private javax.swing.JRadioButton jRadioButton32;
+    private javax.swing.JRadioButton jRadioButton33;
     private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JRadioButton jRadioButton5;
     private javax.swing.JRadioButton jRadioButton6;
